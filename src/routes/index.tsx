@@ -51,9 +51,6 @@ function HomePage() {
             height={1024}
             className="h-auto w-64 sm:w-80 drop-shadow-[0_0_30px_rgba(232,224,200,0.15)]"
           />
-          <p className="mt-2 font-display text-xs uppercase tracking-[0.4em] text-primary/70">
-            Münchner Kindl
-          </p>
         </header>
 
         <div className="heraldic-divider my-10 w-full" />
