@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Youtube, Instagram, Twitter, Music2, Heart, Coffee, Mail } from "lucide-react";
+import { Youtube, Instagram, Twitter, Music2, Heart, Coffee, Mail, Cloud } from "lucide-react";
 import logo from "@/assets/song-warden-logo.png";
 import { LinkButton } from "@/components/LinkButton";
 
@@ -21,6 +21,7 @@ const socialLinks = [
   { label: "TikTok", href: "https://www.tiktok.com/@song_warden", icon: <Music2 className="h-5 w-5" /> },
   { label: "X (Twitter)", href: "https://x.com/SongWarden", icon: <Twitter className="h-5 w-5" /> },
   { label: "Instagram", href: "https://www.instagram.com/culturalsongwarden/", icon: <Instagram className="h-5 w-5" /> },
+  { label: "Bluesky", href: "https://bsky.app/profile/songwarden.bsky.social", icon: <Cloud className="h-5 w-5" /> },
 ];
 
 const supportLinks = [
