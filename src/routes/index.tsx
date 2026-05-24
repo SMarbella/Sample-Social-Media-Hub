@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { Youtube, Instagram, Twitter, Music2, Heart, Coffee, Mail } from "lucide-react";
+import { Youtube, Instagram, Twitter, Music2, Heart, Coffee, Mail, Cloud } from "lucide-react";
 import logo from "@/assets/song-warden-logo.png";
 import { LinkButton } from "@/components/LinkButton";
 
