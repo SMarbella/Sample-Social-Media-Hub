@@ -22,7 +22,7 @@ const socialLinks = [
   { label: "TikTok", href: "https://www.tiktok.com/@song_warden", icon: <Music2 className="h-5 w-5" /> },
   { label: "X (Twitter)", href: "https://x.com/SongWarden", icon: <Twitter className="h-5 w-5" /> },
   { label: "Instagram", href: "https://www.instagram.com/culturalsongwarden/", icon: <Instagram className="h-5 w-5" /> },
-  { label: "Bluesky", href: "https://bsky.app/profile/songwarden.bsky.social", icon: <Cloud className="h-5 w-5" /> },
+  { label: "Bluesky", href: "https://bsky.app/profile/songwarden.bsky.social", icon: <img src={blueskyIcon} alt="" className="h-5 w-5 object-contain" /> },
 ];
 
 const supportLinks = [
