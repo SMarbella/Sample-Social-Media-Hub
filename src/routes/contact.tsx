@@ -18,47 +18,9 @@ export const Route = createFileRoute("/contact")({
   component: ContactPage,
 });
 
-const schema = z.object({
-  name: z.string().trim().min(1, "Name is required").max(100),
-  email: z.string().trim().email("Invalid email").max(255),
-  subject: z.string().trim().max(200).optional(),
-  message: z.string().trim().min(1, "Message is required").max(2000),
-});
-
 function ContactPage() {
-  const [submitting, setSubmitting] = useState(false);
-  const [errors, setErrors] = useState<Record<string, string>>({});
+  const email = "culturalsongwarden@gmail.com";
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const fd = new FormData(e.currentTarget);
-    const data = {
-      name: String(fd.get("name") ?? ""),
-      email: String(fd.get("email") ?? ""),
-      subject: String(fd.get("subject") ?? ""),
-      message: String(fd.get("message") ?? ""),
-    };
-    const result = schema.safeParse(data);
-    if (!result.success) {
-      const errs: Record<string, string> = {};
-      for (const issue of result.error.issues) {
-        errs[String(issue.path[0])] = issue.message;
-      }
-      setErrors(errs);
-      toast.error("Please fix the highlighted fields.");
-      return;
-    }
-    setErrors({});
-    setSubmitting(true);
-    // Placeholder submission — wire to EmailJS / Formspree / Supabase later.
-    await new Promise((r) => setTimeout(r, 700));
-    setSubmitting(false);
-    (e.target as HTMLFormElement).reset();
-    toast.success("Message sent! Thank you.");
-  };
-
-  const inputClass =
-    "w-full rounded-md border border-primary/30 bg-card/40 px-4 py-3 text-foreground placeholder:text-muted-foreground/60 focus:border-primary focus:outline-none focus:ring-2 focus:ring-primary/30 transition";
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-background px-4 py-10 sm:py-14">
