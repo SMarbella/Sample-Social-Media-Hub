@@ -1,8 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowLeft } from "lucide-react";
-import { useState } from "react";
-import { toast } from "sonner";
-import { z } from "zod";
+import { ArrowLeft, Mail } from "lucide-react";
 import logo from "@/assets/song-warden-logo.png";
 
 export const Route = createFileRoute("/contact")({
@@ -20,7 +17,6 @@ export const Route = createFileRoute("/contact")({
 
 function ContactPage() {
   const email = "culturalsongwarden@gmail.com";
-
 
   return (
     <main className="relative min-h-screen overflow-hidden bg-background px-4 py-10 sm:py-14">
@@ -78,51 +74,21 @@ function ContactPage() {
 
         <div className="heraldic-divider my-8 w-full" />
 
-        <form
-          onSubmit={handleSubmit}
-          noValidate
-          className="space-y-5 animate-fade-up"
-          aria-label="Contact form"
+        <section
+          aria-label="Email contact"
+          className="flex flex-col items-center text-center animate-fade-up"
         >
-          <div>
-            <label htmlFor="name" className="mb-2 block font-display text-xs uppercase tracking-[0.25em] text-primary">
-              Name <span aria-hidden="true">*</span>
-            </label>
-            <input id="name" name="name" type="text" required maxLength={100} className={inputClass} aria-invalid={!!errors.name} aria-describedby={errors.name ? "name-err" : undefined} />
-            {errors.name && <p id="name-err" className="mt-1 text-sm text-destructive">{errors.name}</p>}
-          </div>
-
-          <div>
-            <label htmlFor="email" className="mb-2 block font-display text-xs uppercase tracking-[0.25em] text-primary">
-              Email <span aria-hidden="true">*</span>
-            </label>
-            <input id="email" name="email" type="email" required maxLength={255} className={inputClass} aria-invalid={!!errors.email} aria-describedby={errors.email ? "email-err" : undefined} />
-            {errors.email && <p id="email-err" className="mt-1 text-sm text-destructive">{errors.email}</p>}
-          </div>
-
-          <div>
-            <label htmlFor="subject" className="mb-2 block font-display text-xs uppercase tracking-[0.25em] text-primary">
-              Subject
-            </label>
-            <input id="subject" name="subject" type="text" maxLength={200} className={inputClass} />
-          </div>
-
-          <div>
-            <label htmlFor="message" className="mb-2 block font-display text-xs uppercase tracking-[0.25em] text-primary">
-              Message <span aria-hidden="true">*</span>
-            </label>
-            <textarea id="message" name="message" required rows={6} maxLength={2000} className={inputClass} aria-invalid={!!errors.message} aria-describedby={errors.message ? "msg-err" : undefined} />
-            {errors.message && <p id="msg-err" className="mt-1 text-sm text-destructive">{errors.message}</p>}
-          </div>
-
-          <button
-            type="submit"
-            disabled={submitting}
-            className="w-full rounded-md border border-primary bg-primary px-6 py-3 font-display text-sm uppercase tracking-[0.3em] text-primary-foreground transition hover:bg-transparent hover:text-primary disabled:opacity-60"
+          <p className="font-display text-xs uppercase tracking-[0.3em] text-primary/80">
+            Reach me by email
+          </p>
+          <a
+            href={`mailto:${email}`}
+            className="mt-4 inline-flex items-center gap-3 rounded-md border border-primary bg-primary/5 px-6 py-3 font-display text-base text-primary transition hover:bg-primary hover:text-primary-foreground sm:text-lg"
           >
-            {submitting ? "Sending…" : "Send Message"}
-          </button>
-        </form>
+            <Mail className="h-5 w-5" />
+            {email}
+          </a>
+        </section>
 
         <footer className="mt-12 text-center font-display text-xs uppercase tracking-[0.3em] text-primary/40">
           © {new Date().getFullYear()} Song Warden
