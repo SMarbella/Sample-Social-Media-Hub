@@ -17,7 +17,7 @@ export const Route = createFileRoute("/")({
 });
 
 const socialLinks = [
-  { label: "YouTube", href: "https://www.youtube.com/@knowsmore/", icon: <Youtube className="h-5 w-5" /> },
+  { label: "YouTube", href: "https://www.youtube.com/@songwarden", icon: <Youtube className="h-5 w-5" /> },
   { label: "TikTok", href: "https://www.tiktok.com/@song_warden", icon: <Music2 className="h-5 w-5" /> },
   { label: "X (Twitter)", href: "https://x.com/SongWarden", icon: <Twitter className="h-5 w-5" /> },
   { label: "Instagram", href: "https://www.instagram.com/culturalsongwarden/", icon: <Instagram className="h-5 w-5" /> },
