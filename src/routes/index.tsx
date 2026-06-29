@@ -19,7 +19,7 @@ export const Route = createFileRoute("/")({
 const socialLinks = [
   { label: "YouTube", href: "https://www.youtube.com/@songwarden", icon: <Youtube className="h-5 w-5" /> },
   { label: "TikTok", href: "https://www.tiktok.com/@song_warden", icon: <Music2 className="h-5 w-5" /> },
-  { label: "SoundCloud", href: "https://soundcloud.com/song-warden", icon: (
+  { label: "SoundCloud", href: "https://soundcloud.com/songwarden", icon: (
     <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
       <path d="M2 10v4M6 8v8M10 6v12M14 8v8M18 10v4"/>
     </svg>
