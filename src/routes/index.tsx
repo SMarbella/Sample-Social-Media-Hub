@@ -38,7 +38,7 @@ const socialLinks = [
   ) },
   { label: "DailyMotion", href: "https://www.dailymotion.com/user/songwarden", icon: (
     <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
-      <path d="M3 6h18v12H3V6zm2 2v8h2v-3h2v3h2v-3h2v3h2v-3h2v3h2V8H5z"/>
+      <path fill-rule="evenodd" d="M5 4 L2 12 L5 20 L16 20 L20 12 L16 4 Z M9 8 L6 12 L9 16 L13 16 L17 12 L13 8 Z" />
     </svg>
   ) },
 ];
