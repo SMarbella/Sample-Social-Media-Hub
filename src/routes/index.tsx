@@ -47,6 +47,11 @@ const supportLinks = [
   { label: "Patreon", href: "https://www.patreon.com/c/SongWarden", icon: <Heart className="h-5 w-5" /> },
   { label: "Buy Me a Coffee", href: "https://buymeacoffee.com/songwarden", icon: <Coffee className="h-5 w-5" /> },
   { label: "Ko-fi", href: "https://ko-fi.com/songwarden", icon: <Heart className="h-5 w-5" /> },
+  { label: "Fiverr", href: "https://www.fiverr.com/songwarden", icon: (
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
+      <path d="M22.5 7.5h-6v-3h6v3zm-15 0h3v-3h-3v3zm-3 3h3v-3h-3v3zm12 0h3v-3h-3v3zm-3 0h3v-3h-3v3zm-3 0h3v-3h-3v3zm-3 0h3v-3h-3v3zm-3 3h3v-3h-3v3zm3 0h3v-3h-3v3zm3 0h3v-3h-3v3zm3 0h3v-3h-3v3zm3 0h3v-3h-3v3z"/>
+    </svg>
+  ) },
 ];
 
 function HomePage() {
