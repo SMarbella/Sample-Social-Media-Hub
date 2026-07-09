@@ -48,8 +48,8 @@ const supportLinks = [
   { label: "Buy Me a Coffee", href: "https://buymeacoffee.com/songwarden", icon: <Coffee className="h-5 w-5" /> },
   { label: "Ko-fi", href: "https://ko-fi.com/songwarden", icon: <Heart className="h-5 w-5" /> },
   { label: "Fiverr", href: "https://www.fiverr.com/songwarden", icon: (
-    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
-      <path d="M2 22V8c0-4 3-6 8-6h12v20h-4v-8H6v8H2zm4-12h12V6h-6C7 6 6 8 6 10z"/>
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" fillRule="evenodd" aria-hidden="true">
+      <path d="M2 22V10c0-4 4-8 10-8h10v20h-5V12H7v10H2zM7 12h10v10H7V12zm0 0h5V7c0-2-2-3-5-3v8z"/>
     </svg>
   ) },
 ];
