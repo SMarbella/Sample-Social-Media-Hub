@@ -49,7 +49,7 @@ const supportLinks = [
   { label: "Ko-fi", href: "https://ko-fi.com/songwarden", icon: <Heart className="h-5 w-5" /> },
   { label: "Fiverr", href: "https://www.fiverr.com/songwarden", icon: (
     <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" fillRule="evenodd" aria-hidden="true">
-      <path d="M2 22V10c0-4 4-8 10-8h10v20h-5V12H7v10H2zM7 12h10v10H7V12zm0 0h5V7c0-2-2-3-5-3v8z"/>
+      <path d="M2 22V8A6 6 0 0 1 8 2H18V22H2ZM8 4H13V8H8ZM8 10H13V22H8Z"/>
     </svg>
   ) },
 ];
