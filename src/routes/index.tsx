@@ -85,14 +85,15 @@ function HomePage() {
           className="space-y-4 text-center text-[15px] leading-relaxed text-foreground/85 animate-fade-up"
           style={{ animationDelay: "0.1s" }}
         >
-          <p className="font-display text-xl text-primary">Herzlich willkommen an alle!</p>
+          <p className="font-display text-xl text-primary">Herzlich Willkommen an alle!</p>
           <p>
-            In a world of billions of searches, yours made me smile. Please support my work by
-            subscribing to my awesome YouTube channel! I would appreciate monetary donations.
-            Also, no bots allowed! Thank you!
+            In a world of billions of searches, yours made me smile. Please subscribe to my
+            awesome Youtube channel! Thank you!
           </p>
           <p className="italic text-primary/80">
-            I compose covers of traditional folk music from around the world.
+            I compose covers of traditional folk music from around the world. I collect historical
+            sources and sing forgotten songs. When I was a kid, I used to sing at a Catholic church
+            choir. I have the mind of a scholarly researcher, so please be respectful.
           </p>
         </section>
 
