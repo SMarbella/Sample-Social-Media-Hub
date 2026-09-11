@@ -46,6 +46,11 @@ const socialLinks = [
       <path d="M7.5 4.5v15a1.5 1.5 0 0 0 2.4 1.2l9-7.5a1.5 1.5 0 0 0 0-2.4l-9-7.5a1.5 1.5 0 0 0-2.4 1.2z"/>
     </svg>
   ) },
+  { label: "Odysee", href: "https://odysee.com/@SongWarden:6", icon: (
+    <svg viewBox="0 0 24 24" className="h-5 w-5" fill="currentColor" aria-hidden="true">
+      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+    </svg>
+  ) },
 ];
 
 const supportLinks = [
